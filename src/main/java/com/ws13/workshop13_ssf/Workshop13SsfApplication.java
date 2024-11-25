@@ -22,7 +22,6 @@ public class Workshop13SsfApplication {
 					System.err.println("Error! Please key in a valid argument. Exiting...");
 					System.exit(1);
 				}
-				pathDir = "."+pathDir;
 			}
 			else{
 				//error to catch if there is no argument or no --dataDir. end program
