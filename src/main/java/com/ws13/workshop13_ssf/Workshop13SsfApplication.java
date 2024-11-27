@@ -16,7 +16,7 @@ public class Workshop13SsfApplication {
 			String pathDir ="";
 			if (appArgs.containsOption("dataDir")){
 				//java myapp.jar --dataDir /opt/tmp/data
-				//java -jar target\workshop13-ssf-0.0.1-SNAPSHOT.jar --dataDir=/opt/tmp/data
+				//java -jar target\workshop13-ssf-0.0.1-SNAPSHOT.jar --dataDir=opt/tmp/data
 				pathDir =appArgs.getOptionValues("dataDir").get(0);
 				if (pathDir.equals("")){
 					System.err.println("Error! Please key in a valid argument. Exiting...");
@@ -25,7 +25,7 @@ public class Workshop13SsfApplication {
 			}
 			else{
 				//error to catch if there is no argument or no --dataDir. end program
-				System.err.println("Error! Please key in a valid argument. Exiting...");
+				System.err.println("Error! --dataDir must be followed by an argument. Exiting...");
 				System.exit(1);
 			}
 			//application opens this dir, if it does not exist, create it
